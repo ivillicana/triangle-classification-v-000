@@ -32,7 +32,7 @@ class Triangle
   end
 
   def valid?
-    if (@side1 + @side2 > @side3 || @side1 + @side3 > @side2 || @side2 + @side3 > @side1) || @sides.any? {|x| x <= 0}
+    if (@side1 + @side2 < @side3 || @side1 + @side3 < @side2 || @side2 + @side3 < @side1) || @sides.any? {|x| x <= 0}
       raise TriangleError
     end
   end
