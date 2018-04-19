@@ -30,12 +30,14 @@ class Triangle
   end
 
   def valid?
+    if @side1 == 0
     begin
       raise TriangleError
     rescue TriangleError => error
       puts error.message
     end
   end
+
   def kind
     self.equilateral? || self.isosceles? || self.scalene?
   end
