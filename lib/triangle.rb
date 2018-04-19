@@ -40,6 +40,7 @@ class Triangle
   end
 
   def kind
+    self.valid?
     self.equilateral? || self.isosceles? || self.scalene?
   end
 end
