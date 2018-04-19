@@ -8,8 +8,12 @@ class Triangle
   end
 
   def equilateral?
-    @side1 == @side2 && @side2 == @side3
-    return :equilateral
+    return :equilateral if @side1 == @side2 && @side2 == @side3
+
+  end
+
+  def isosceles
+
   end
 
   def kind
