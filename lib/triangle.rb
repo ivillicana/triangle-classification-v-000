@@ -19,7 +19,7 @@ class Triangle
     end
   end
 
-  def scalene
+  def scalene?
     return :scalene if @side1 != @side2 && @side2 != @side3
   end
 
