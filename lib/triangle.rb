@@ -1,10 +1,11 @@
-class TriangleError < StandardError
-  def message
-    "Triangle is invalid with given measurements!"
-  end
-end
+
 
 class Triangle
+  class TriangleError < StandardError
+    def message
+      "Triangle is invalid with given measurements!"
+    end
+  end
   attr_accessor :side1, :side2, :side3
 
   def initialize(side1, side2, side3)
