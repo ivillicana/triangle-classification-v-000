@@ -32,11 +32,11 @@ class Triangle
 
   def valid?
     if @side1 == 0
-      begin
+      #begin
         raise TriangleError
-      rescue TriangleError => error
-        puts error.message
-      end
+      #rescue TriangleError => error
+      #  puts error.message
+      #end
     end
   end
 
