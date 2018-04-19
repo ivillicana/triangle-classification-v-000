@@ -1,3 +1,7 @@
+class TriangleError < StandardError
+  def message
+    puts "Triangle is invalid with given measurements!"
+  end
 class Triangle
   attr_accessor :side1, :side2, :side3
 
