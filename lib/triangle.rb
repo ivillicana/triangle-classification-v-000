@@ -12,10 +12,6 @@ class Triangle
   end
 
   def kind
-    if self.equilateral?
-
-    else
-
-    end
+    self.equilateral?
   end
 end
