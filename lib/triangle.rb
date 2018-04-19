@@ -12,7 +12,7 @@ class Triangle
   end
 
   def kind
-    if condition
+    if self.equilateral?
 
     else
 
