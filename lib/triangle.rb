@@ -12,6 +12,7 @@ class Triangle
     @side1 = side1
     @side2 = side2
     @side3 = side3
+    @sides = [@side1, @side2, @side3]
   end
 
   def equilateral?
@@ -31,12 +32,8 @@ class Triangle
   end
 
   def valid?
-    if @side1 == 0
-      #begin
-        raise TriangleError
-      #rescue TriangleError => error
-      #  puts error.message
-      #end
+    if @side1 == 0 || (@side1 + @side2 > @side3 || @side1 + @side3 > @side2 || @side2 + @side3 > @side1) ||
+      raise TriangleError
     end
   end
 
