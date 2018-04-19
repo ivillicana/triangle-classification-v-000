@@ -24,6 +24,6 @@ class Triangle
   end
 
   def kind
-    self.equilateral? || self.isosceles?
+    self.equilateral? || self.isosceles? || self.scalene?
   end
 end
