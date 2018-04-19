@@ -18,6 +18,6 @@ class Triangle
   end
 
   def kind
-    self.equilateral?
+    self.equilateral? || self.isosceles?
   end
 end
